@@ -195,7 +195,6 @@ async function main() {
   console.log("  Employee:            mitarbeiter@muster-bau.ch / Password1");
   console.log("  Owner (Starter):     owner@demo-gmbh.ch    / Password1");
 
-  void businessPlan;
 }
 
 main()
