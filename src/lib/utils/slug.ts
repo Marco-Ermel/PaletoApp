@@ -1,7 +1,7 @@
 export function generateSlug(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[äöü]/g, (char) => ({ ä: "ae", ö: "oe", ü: "ue" }[char] || char))
+    .replace(/[äöüÄÖÜ]/g, (char) => ({ ä: "ae", ö: "oe", ü: "ue", Ä: "ae", Ö: "oe", Ü: "ue" }[char] || char))
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .substring(0, 50);

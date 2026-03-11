@@ -8,7 +8,7 @@ export async function requireAuth() {
   if (!session?.user?.id) {
     redirect("/login");
   }
-  return session!;
+  return session;
 }
 
 export async function requireUser() {
